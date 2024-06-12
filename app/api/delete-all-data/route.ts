@@ -1,5 +1,7 @@
 import prisma from "@/lib/db";
 
+export const fetchCache = 'force-no-store'
+
 export async function DELETE(req: Request) {
 
   if (req.method !== 'DELETE') {

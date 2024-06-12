@@ -8,7 +8,7 @@ export async function POST(req: Request) {
 
   const { name, value } = await req.json()
 
-  const newData = await prisma().data.create({
+  const newData = await prisma.data.create({
     data: {
       name,
       value
